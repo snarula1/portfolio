@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #334155;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .section-title {
+            color: #1e293b;
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 700; /* font-bold */
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .subsection-title {
+            color: #334155;
+            font-size: 1.5rem; /* text-2xl */
+            font-weight: 600; /* font-semibold */
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .project-title {
+            color: #1d4ed8;
+            font-size: 1.25rem; /* text-xl */
+            font-weight: 600; /* font-semibold */
+            margin-bottom: 0.5rem;
+        }
+        .project-link {
+            color: #4f46e5;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .project-link:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container">
+        <header class="text-center py-8">
+            <h1 class="section-title">My Project Portfolio</h1>
+        </header>
+
+        <section class="card">
+            <h2 class="subsection-title">Overview of My Role</h2>
+            <p>In all projects, my role encompassed the entire system development life cycle:</p>
+            <ul>
+                <li><strong>Requirements Gathering and Analysis:</strong> Defining project scope and user needs.</li>
+                <li><strong>System Design:</strong> Focusing on scalability, security, and usability. This included designing systems, user interfaces, wireframes, database designs, and OOPS middle-layer C# design. I also utilized producer-consumer architecture and various design patterns (Abstract, Interfaces, Sealed Class, Singleton, Chain, Builder).</li>
+                <li><strong>Implementation:</strong> Sometimes involving business logic in the middle-layer (C# or DotNet) and sometimes in stored procedures/back-end.</li>
+                <li><strong>Common Features:</strong> Most projects included dashboards, auditing abilities, and telemetry. Performance was improved using caching or multi-threading.</li>
+                <li><strong>Government Product Focus:</strong> Significant attention was paid to 508 compliance and meeting WCAG 2.0 AA standards.</li>
+                <li><strong>Authentication:</strong> Resident-facing authentication used salt-db logins, while admin-side authentication and authorization utilized SSO (Tivoli or in-house product).</li>
+                <li><strong>Post-production Support:</strong> Provided ongoing support and implemented enhancements as requested.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2 class="subsection-title">Digital Transformation Projects (Montgomery County, MD)</h2>
+            <p>These products are currently operational.</p>
+
+            <div class="mb-6">
+                <h3 class="project-title">Streetlight Map App</h3>
+                <p>Designed and deployed a web-based system to manage an $800K+ streetlight program. Enabled expansion of services to residents without new hires. Saved ~$200K/year (1 FTE). Designed the whole system, start to finish.</p>
+                <p>Link: <a href="https://www2.montgomerycountymd.gov/dot-streetlight/Index.aspx" class="project-link" target="_blank" rel="noopener noreferrer">https://www2.montgomerycountymd.gov/dot-streetlight/Index.aspx</a></p>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="project-title">Permit Fee Estimator</h3>
+                <p>Built tool allowing residents and contractors to self-estimate project fees. Reduced in-person and phone inquiries, eliminating need for 2 FTEs. Saves ~$400K/year. Designed the whole system, start to finish.</p>
+                <p>Link: <a href="https://apps.montgomerycountymd.gov/dpsfeeorpermitestimator/landingpage.htm" class="project-link" target="_blank" rel="noopener noreferrer">https://apps.montgomerycountymd.gov/dpsfeeorpermitestimator/landingpage.htm</a></p>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="project-title">Smart Parking System</h3>
+                <p>Developed live parking availability system integrated with 3rd-party counters and Google Maps. Included internal admin portal for inventory and revenue management. Supports $80M/year program with no added staff. Saves ~$400K/year (2 FTEs). Award-winning project (2016). Designed the whole system, start to finish.</p>
+                <p>Link: <a href="https://www2.montgomerycountymd.gov/gisparking/parkingpublicmap.htm" class="project-link" target="_blank" rel="noopener noreferrer">https://www2.montgomerycountymd.gov/gisparking/parkingpublicmap.htm</a></p>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="project-title">Solicitation Tracker</h3>
+                <p>Developed solicitation tracker and integrated it with CMS, content management system. Technologies used were DotNet, Asp.Net, Bootstrap, Jquery, and WCAG 2.0 AA enabled.</p>
+                <p>Link: <a href="https://www.montgomerycountymd.gov/PRO/solicitations/index.html" class="project-link" target="_blank" rel="noopener noreferrer">https://www.montgomerycountymd.gov/PRO/solicitations/index.html</a></p>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="project-title">Walk and Ride System</h3>
+                <p>A custom resident facing system was created where people can register and participate in walk and ride program. It was created using rest-api.</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="subsection-title">Security & Internal Tools</h2>
+
+            <div class="mb-6">
+                <h3 class="project-title">Web Crawler for Security Scanning</h3>
+                <p>A custom web crawler was made to scan pages for missing aria labels, and security vulnerabilities. After picking up URL’s the urls were followed for security vulnerabilities. A limited attack was made on the url which determined if there was an issue. A custom report was generated for vulnerabilities to be followed later. This was done using Java and BFS. DFS was considered but settled on BFS. Multi-threading and high ram was needed to store the Url’s in the map.</p>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="project-title">Tiny URL project</h3>
+                <p>A custom tiny url was made for internal urls. The url was entered and a 6 character alphanumeric string was generated. It was stored in sql server, however, caching was implemented for frequent hit URLs. Technology stack used was DotNet/SqlServer/Asp.Net.</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="subsection-title">UMD School Projects</h2>
+
+            <div class="mb-6">
+                <h3 class="project-title">iRememberUMD and Gather application</h3>
+                <p>Created using Java, Android, and GCP. Backend was written in Java and deployed to GCP, using google app engine. Front end was developed in Android, and apple to limited degree.</p>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="project-title">Kali Linux Penetration Testing</h3>
+                <p>Kali Linux Peneration testing was conducted to breach UMD systems with authorization. Burp suites were used. After positive cases were found, actual hack attempts were made to make sure the vulnerabilities persists, and CVE references exists. This exercise lead to OpenSSL discovery.</p>
+            </div>
+        </section>
+
+        <footer class="text-center py-6 text-gray-600 text-sm">
+            <p>&copy; 2024 My Project Portfolio. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
